@@ -98,7 +98,7 @@ function App() {
                       outerRadius={75}
                       paddingAngle={2}
                     >
-                      {day.mix.map((entry, cellIndex) => (
+                      {day.mix.map((_, cellIndex) => (
                         <Cell
                           key={`cell-${cellIndex}`}
                           fill={CHART_COLORS[cellIndex % CHART_COLORS.length]}
